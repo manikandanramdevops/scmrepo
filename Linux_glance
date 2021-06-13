@@ -1,0 +1,30 @@
+## Linux 
+##INFO
+Kernel --> TO interact with th h/w and get the job done
+Shell --> An Application to get pass the commands to the kernel
+
+
+
+## Commands
+uname -a --> (all) Display the kernel info
+umask --> To give the permissions to the newly created directories & files
+cal --> Display the calendar
+cal Jan 2021 --> Display the specific month
+time +%d-%m  --> Display the specific time in user defined format
+filename wc -l  --> prints the no of lines
+filename wc -w --> prints the no of words
+file filename.log   ---> prints the type of file
+# Sort 
+SORT command is used to sort a file, arranging the records in a particular order. By default, the sort command sorts file assuming the contents are ASCII.
+sort filename.log --> prints the sort alphabetically
+
+# cut command
+The cut command in UNIX is a command for cutting out the sections from each line of files and writing the result to standard output. It can be used to cut parts of a line by byte position, character and field. Default /t is seperator/delimiter
+
+
+
+## Regex commands
+.       --> Matches any character
+[ ] 	--> Matches a range of characters
+[^ ] 	--> matches a range of characters except for the one mentioned in braces
+* 		--> will match zero or more of the preceding items
