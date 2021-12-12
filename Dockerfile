@@ -1,8 +1,8 @@
-FROM httpd
+FROM nginx
 
 LABEL maintainer="ReliefMelone"
 
-WORKDIR /var/www/html/
-COPY . /var/www/html/
+WORKDIR /usr/share/nginx/html
+COPY . /usr/share/nginx/html
 
-EXPOSE 80
+EXPOSE 8080
