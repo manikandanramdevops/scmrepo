@@ -1,11 +1,8 @@
-FROM nginx:alpine
+FROM httpd
 
 LABEL maintainer="ReliefMelone"
 
-WORKDIR /usr/share/nginx/html
-COPY . .
+WORKDIR /var/www/html/
+COPY . /var/www/html/
 
-RUN chgrp -R root /var/cache/nginx /var/run /var/log/nginx && \
-    chmod -R 770 /var/cache/nginx /var/run /var/log/nginx
-
-CMD ["nginx", "-g", "daemon off;"]
+EXPOSE 80
