@@ -1,15 +1,13 @@
 version: 2
 
 flow:
-  - name: kaniko-parallel
-    flow:
-      - name: kaniko-sales-audit
-        timeout: 10m
-        type: eureka/kaniko:v2
-        phases:
-          - mergedToDevelop
-        env:
-          DOCKERFILE: .ci/Dockerfile
-          CONTEXT: .ci/
-          IMAGE_NAME: osta-jira-xray-traceability
-          IMAGE_TAG: v1-sa
+  - name: kaniko-sales-audit
+    timeout: 10m
+    type: eureka/kaniko:v2
+    phases:
+      - mergedToDevelop
+    env:
+      DOCKERFILE: .ci/Dockerfile
+      CONTEXT: .ci/
+      IMAGE_NAME: osta-jira-xray-traceability
+      IMAGE_TAG: v1-sa
