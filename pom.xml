@@ -68,7 +68,7 @@
     <distributionManagement>
         <repository>
             <id>maven</id>
-            <url>http://lbservice-1649896545.ap-northeast-1.elb.amazonaws.com:8081/</url>
+            <url>http://lbservice-1649896545.ap-northeast-1.elb.amazonaws.com:8081/repository/maven/</url>
         </repository>
     </distributionManagement>
 </project>
